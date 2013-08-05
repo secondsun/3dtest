@@ -135,9 +135,9 @@ public class MapRenderer implements GLSurfaceView.Renderer  {
                 GL10.GL_REPEAT);
 
         long time = SystemClock.uptimeMillis() % 4000L;
-        float angle = 0.090f * ((int) time);
+        float angle = 0.045f * ((int) time);
 
-        gl.glRotatef(angle, 0, 1.0f, 0.0f);
+        gl.glRotatef(angle, 1.0f, 0.0f, 0.0f);
 
         mMap.draw(gl);
     }

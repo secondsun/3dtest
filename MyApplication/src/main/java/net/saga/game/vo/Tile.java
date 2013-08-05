@@ -29,12 +29,12 @@ public class Tile {
         -ONE, ONE, ONE,
         -ONE, -ONE, ONE,
 
-        -ONE, -ONE, -ONE, //face 3 (left)
+        -ONE, -ONE, -ONE, //face 3 (right)
         -ONE, -ONE, ONE,
         -ONE, ONE, -ONE,
         -ONE, ONE, ONE,
 
-            ONE, ONE, ONE, //face 4 (right)
+            ONE, ONE, ONE, //face 4 (left)
             ONE, ONE, -ONE,
             ONE, -ONE, ONE,
             ONE, -ONE, -ONE,
@@ -52,36 +52,38 @@ public class Tile {
 
     //Coordinate of the textures
     public static final float[] texCoords = {
-        0.0f, 0.0f,
-        0.0f, 1.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
 
-        0.0f, 0.0f,
-        0.0f, 1.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-
-        0.0f, 0.0f,
-        0.0f, 1.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-
-        0.0f, 0.0f,
-        0.0f, 1.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
+        .25f, .50f,
+        .25f, .25f,
+        0.0f, .50f,
+        0.0f, .25f,
 
 
-        0.0f, 1.0f,
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
+        .75f, 0.0f,
+        .75f, .25f,
+        .50f, 0.0f,
+        .50f, .25f,
 
-        0.0f, 1.0f,
-        0.0f, 0.0f,
+        .25f, .25f,
+        .5f, .25f,
+        .25f, 0.0f,
+        .5f, 0.0f,
+
+        .75f, 0.0f,
         1.0f, 0.0f,
-        1.0f, 1.0f,
+        .75f, .25f,
+        1.0f, .25f,
+
+        .25f, .25f,
+        .25f, 0.0f,
+        0.0f, 0.0f,
+        0.0f, .25f,
+
+
+       .25f, .5f,
+       .25f, .25f,
+       .50f, .25f,
+       .50f, .5f,
     };
 
 //Defining triangles based on the vertice array indexes
